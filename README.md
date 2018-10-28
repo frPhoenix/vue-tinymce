@@ -12,10 +12,10 @@ window.tinymce.baseURL = '/static/tinymce'
 window.tinymce.suffix = '.min' // 解决报错 Uncaught SyntaxError: Unexpected token < 
 ```
 
-2. 在vue-cli3中，将tinymce文件夹放置在`public`文件夹下。在`main.js`文件中这样引用：
+2. 在vue-cli3中，将tinymce文件夹放置在`public`文件夹下。在`main.js`文件中这样引用：（我这里是这样配置，根据项目配置不同你那里可能需要做相应的改变）
 ```
 import 'tinymce/tinymce.min.js'
-window.tinymce.baseURL = 'tinymce'
+window.tinymce.baseURL = '/tinymce'
 window.tinymce.suffix = '.min'
 ```
 
